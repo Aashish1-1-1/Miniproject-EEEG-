@@ -12,7 +12,10 @@ section {
   position: relative;
   left:800px
 }
-
+.how{
+	position:relative;
+	left:750px;
+}
 .segment {
   border: 10px solid #999;
   width: 0;

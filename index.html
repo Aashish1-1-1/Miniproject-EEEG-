@@ -1,12 +1,12 @@
 <html>
 	<head>
-		BCD to 7 Segment display:<br>
+		BCD to 7 Segment display football substitution board:<br>
 		<link rel="stylesheet" href="index.css">
 	</head>
 	<body>
 		<script src="index.js"></script>
-		<label for="decimal">Decimal:</label>
-		<select name="decimal" id="decimal" onchange="handelchange()">
+		<label for="decimal">Outgoing:</label>
+		<select name="decimal" id="decimaloutgoing" onchange="handelchangeoutgoing()">
 			<option value='0'>0</option>
 			<option value='1'>1</option>
 			<option value='2'>2</option>
@@ -18,6 +18,20 @@
 			<option value='8'>8</option>
 			<option value='9'>9</option>
 		</select><br><br><br>
+		<label for="decimal">Incoming:</label>
+		<select name="decimal" id="decimalincoming" onchange="handelchangeincoming()">
+			<option value='0'>0</option>
+			<option value='1'>1</option>
+			<option value='2'>2</option>
+			<option value='3'>3</option>
+			<option value='4'>4</option>
+			<option value='5'>5</option>
+			<option value='6'>6</option>
+			<option value='7'>7</option>
+			<option value='8'>8</option>
+			<option value='9'>9</option>
+		</select><br><br><br>
+		<div class="outgoing">
 		<section class="seven-segment">
 		    <div class="segment" id="seg_a"></div>
 		    <div class="segment" id="seg_b"></div>
@@ -27,5 +41,27 @@
 		    <div class="segment" id="seg_f"></div>
 		    <div class="segment" id="seg_g"></div>
 		  </section>
+
+		<section class="seven-segment">
+		    <div class="segment" id="seg_a"></div>
+		    <div class="segment" id="seg_b"></div>
+		    <div class="segment" id="seg_c"></div>
+		    <div class="segment" id="seg_d"></div>
+		    <div class="segment" id="seg_e"></div>
+		    <div class="segment" id="seg_f"></div>
+		    <div class="segment" id="seg_g"></div>
+		  </section>
+		</div>
+		<div class="incoming">
+		<section class="seven-segment">
+		    <div class="segment" id="segi_a"></div>
+		    <div class="segment" id="segi_b"></div>
+		    <div class="segment" id="segi_c"></div>
+		    <div class="segment" id="segi_d"></div>
+		    <div class="segment" id="segi_e"></div>
+		    <div class="segment" id="segi_f"></div>
+		    <div class="segment" id="segi_g"></div>
+		  </section>
+		</div>
 	</body>
 </html>

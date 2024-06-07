@@ -18,8 +18,8 @@ const BCD=(binary)=>{
 	return booleanLogic.map(exp=>Number(exp));
 }
 
-const handelchange=()=>{
-	const decimal=Number(document.getElementById("decimal").value);
+const handelchangeincoming=()=>{
+	const decimal=Number(document.getElementById("decimalincoming").value);
 	console.log(decimal)
 	//Convert to binary
 	const binary=Binaryvalues[decimal];
@@ -43,3 +43,26 @@ const handelchange=()=>{
 }
 
 
+const handelchangeoutgoing=()=>{
+	const decimal=Number(document.getElementById("decimaloutgoing").value);
+	console.log(decimal)
+	//Convert to binary
+	const binary=Binaryvalues[decimal];
+	console.log(binary)
+	//Input in BCDdecoder
+	const abcdefg=BCD(binary);
+	console.log(abcdefg);
+	//get value of abcdefg
+	//change classname to elumunate the led
+	const target=["segi_a","segi_b","segi_c","segi_d","segi_e","segi_f","segi_g"]
+	for(let i=0;i<abcdefg.length;++i){
+		const element=document.getElementById(target[i]);
+		if(abcdefg[i]==1){
+			element.classList.add("segLitO")
+		}
+		else{
+			element.classList.remove("segLitO")
+		}
+	}
+
+}

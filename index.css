@@ -2,7 +2,9 @@ section {
   width: 50%;
   float: left;
 }
-
+.outgoing{
+	margin-right:6px;
+}
 .seven-segment {
   background-color: black;
   width: 120px;
@@ -23,6 +25,9 @@ section {
   border-color: #2ade2a;
 }
 
+.segLitO {
+  border-color: red;
+}
 .segment::before,
 .segment::after {
   width: 0;
@@ -36,7 +41,10 @@ section {
 
 #seg_c::before,
 #seg_f::before,
-#seg_g::before {
+#seg_g::before,
+#segi_c::before,
+#segi_f::before,
+#segi_g::before{
   border-left-width: 0;
   border-right-color: inherit;
   top: -10px;
@@ -45,7 +53,10 @@ section {
 
 #seg_c::after,
 #seg_f::after,
-#seg_g::after {
+#seg_g::after,
+#segi_c::after,
+#segi_f::after,
+#segi_g::after {
   border-right-width: 0;
   border-left-color: inherit;
   top: -10px;
@@ -55,7 +66,11 @@ section {
 #seg_a::before,
 #seg_b::before,
 #seg_d::before,
-#seg_e::before {
+#seg_e::before, 
+#segi_a::before,
+#segi_b::before,
+#segi_d::before,
+#segi_e::before{
   border-top-width: 0;
   border-bottom-color: inherit;
   top: -20px;
@@ -65,7 +80,11 @@ section {
 #seg_a::after,
 #seg_b::after,
 #seg_d::after,
-#seg_e::after {
+#seg_e::after 
+#segi_a::after,
+#segi_b::after,
+#segi_d::after,
+#segi_e::after {
   border-bottom-width: 0;
   border-top-color: inherit;
   bottom: -20px;
@@ -74,46 +93,46 @@ section {
 
 #seg_c,
 #seg_f,
-#seg_g {
+#seg_g,#segi_c,#segi_f,#segi_g{
   width: 56px;
   height: 0;
 }
 
 #seg_a,
-#seg_b {
+#seg_b,#segi_a,#segi_b {
   right: 10px;
 }
 
 #seg_c,
 #seg_f,
-#seg_g {
+#seg_g,#segi_c,#segi_f,#segi_g {
   left: 32px;
 }
 
-#seg_d,
-#seg_e {
+#seg_d,,
+#seg_e,#segi_d,#segi_e {
   left: 10px;
 }
 
-#seg_g {
+#seg_g,#segi_g {
   top: 80px;
 }
 
-#seg_c {
+#seg_c,#segi_c {
   bottom: 10px;
 }
 
-#seg_f {
+#seg_f,#segi_f {
   top: 10px;
 }
 
 #seg_a,
-#seg_e {
+#seg_e,#segi_a,#segi_e {
   top: 32px;
 }
 
 #seg_b,
-#seg_d {
+#seg_d,#segi_b,#segi_d {
   bottom: 32px;
 }
 
